@@ -5,7 +5,7 @@
 * (including web sites) or distributed to other students.
 *
 * Name: __Mohammadhossein__Sobhanmanesh________ Student ID: ____116523200_____ Date: ______Sep 14,2022____
-* Cyclic Link: _______________________________________________________________
+* Cyclic Link: _____https://dead-ruby-giraffe.cyclic.app/_________________________________________
 *
 ********************************************************************************/
 
@@ -95,10 +95,6 @@ app.delete("/api/movies/:id", (req, res) => {
       res.status(500).json({ message: err });
     });
 });
-
-
-
-
 
 
 // Resource not found (this should be at the end)
