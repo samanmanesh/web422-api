@@ -1,5 +1,6 @@
 // const mongoose = require("mongoose");
-import mongoose from 'mongoose';
+// import mongoose from 'mongoose';
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const movieSchema = new Schema({
@@ -41,8 +42,8 @@ const movieSchema = new Schema({
 }
 );
 
-//  module.exports  = class MoviesDB {
-  export default class MoviesDB { 
+ module.exports  = class MoviesDB {
+  // export default class MoviesDB { 
   constructor() {
     // We don't have a `Movie` object until initialize() is complete
     this.Movie = null;

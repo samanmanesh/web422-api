@@ -10,14 +10,16 @@
 ********************************************************************************/
 
 
-// const express = require('express');
-import express from "express";
-// const path = require('path');
-import path from "path";
-// const cors = require('cors');
-import cors from "cors";
-import dotenv from "dotenv";
-import MoviesDB from "./modules/moviesDB.js"
+const express = require('express');
+// import express from "express";
+const path = require('path');
+// import path from "path";
+const cors = require('cors');
+// import cors from "cors";
+// import dotenv from "dotenv";
+const dotenv = require('dotenv');
+// import MoviesDB from "./modules/moviesDB.js"
+const MoviesDB = require('./modules/moviesDB.js');
 
 const app = express();
 const HTTP_PORT = process.env.PORT || 8080;
