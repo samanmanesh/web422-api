@@ -21,7 +21,7 @@ import MoviesDB from "./modules/moviesDB.js"
 
 const app = express();
 const HTTP_PORT = process.env.PORT || 8080;
-
+const db = new MoviesDB();
 //For using .env file
 // require('dotenv').config();
 dotenv.config();
@@ -31,7 +31,7 @@ dotenv.config();
 app.use(express.json());
 app.use(cors());
 
-const db = new MoviesDB();
+
 
 app.get("/", (req, res) => {
   res.json({ message: "API Listening" });
