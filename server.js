@@ -11,7 +11,6 @@
 
 
 const express = require('express');
-const path = require('path');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const MoviesDB = require('./modules/moviesDB.js');
@@ -19,14 +18,14 @@ const MoviesDB = require('./modules/moviesDB.js');
 const app = express();
 const HTTP_PORT = process.env.PORT || 8080;
 const db = new MoviesDB();
-//For using .env file
-require('dotenv').config();
+
 
 //Middleware
+app.use(cors());
+//For using .env file
+require('dotenv').config();
 // Add support for incoming JSON entities
 app.use(express.json());
-app.use(cors());
-
 
 app.get("/", (req, res) => {
   res.json({ message: "API Listening" });
