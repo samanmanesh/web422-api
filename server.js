@@ -5,7 +5,7 @@
 * (including web sites) or distributed to other students.
 *
 * Name: __Mohammadhossein__Sobhanmanesh________ Student ID: ____116523200_____ Date: ______Sep 14,2022____
-* Cyclic Link: _____https://dead-ruby-giraffe.cyclic.app/_________________________________________
+* Cyclic Link: https://dead-ruby-giraffe.cyclic.app/
 *
 ********************************************************************************/
 
