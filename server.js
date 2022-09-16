@@ -11,28 +11,21 @@
 
 
 const express = require('express');
-// import express from "express";
 const path = require('path');
-// import path from "path";
 const cors = require('cors');
-// import cors from "cors";
-// import dotenv from "dotenv";
 const dotenv = require('dotenv');
-// import MoviesDB from "./modules/moviesDB.js"
 const MoviesDB = require('./modules/moviesDB.js');
 
 const app = express();
 const HTTP_PORT = process.env.PORT || 8080;
 const db = new MoviesDB();
 //For using .env file
-// require('dotenv').config();
-dotenv.config();
+require('dotenv').config();
 
 //Middleware
 // Add support for incoming JSON entities
 app.use(express.json());
 app.use(cors());
-
 
 
 app.get("/", (req, res) => {
@@ -114,7 +107,4 @@ db.initialize(process.env.MONGODB_CONN_STRING)
     console.log(err);
   });
 
-// Tell the app to start listening for requests
-// app.listen(HTTP_PORT, () => {
-//   console.log('Ready to handle requests on port ' + HTTP_PORT);
-// });
+
