@@ -49,7 +49,7 @@ app.get("/api/movies", (req, res) => {
 
   req.query.page = req.query.page;
   req.query.perPage = req.query.perPage;
-  req.query.title = req.query.title || "title";
+  req.query.title = req.query.title;
   db.getAllMovies(req.query.page, req.query.perPage, req.query.title)
     .then((data) => {
       res.status(201).json(data);
